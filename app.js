@@ -16,7 +16,7 @@ const checkLoginStatus = () => {
     const accessToken = localStorage.getItem('accessToken');
     if (!accessToken) {
         console.log("Redirecting to login page...");
-        window.location.href = 'login.html'; // Redirect to login page
+        
         return false;
     }
     return true;
