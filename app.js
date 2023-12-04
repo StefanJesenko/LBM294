@@ -442,7 +442,7 @@ const fetchWithAuth = async (url, options = {}) => {
     const accessToken = localStorage.getItem('accessToken');
     if (!accessToken) {
         // Wenn kein AccessToken vorhanden ist, wird der Benutzer zur Anmeldeseite weitergeleitet
-        window.location.href = 'login.html'; // Hier "login.html" durch Ihre tatsächliche Anmeldeseite ersetzen
+        
     }
     if (!options.headers) {
         options.headers = {};
