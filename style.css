@@ -1,0 +1,185 @@
+/* Reset some basic elements */
+body, h1, h2, p, ul, li, form, input, button {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Basic styling */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    background: #555;
+    overflow: hidden;
+    color: white;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    padding: 5px 20px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background: #666;
+    color : white;
+}
+
+main {
+    padding: 20px;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    background: white;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+h2 {
+    color: #333;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Form styling */
+form {
+    background: #fff;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+label {
+    margin-top: 10px;
+    display: block;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: #333;
+    color: black;
+    border: none;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #555;
+    cursor: pointer;
+    color: white;
+}
+#login-form-container {
+    float: right; /* Aligns the login form to the right */
+    padding: 10px;
+    background: #555;
+}
+
+#login-form {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Adds space between form elements */
+}
+
+#login-form input[type="text"],
+#login-form input[type="password"] {
+    padding: 5px;
+    border: 1px solid #ddd;
+    background: #f4f4f4;
+    color: black;
+    height: 36px; /* Sets a fixed height for input fields */
+    line-height: 1.2; /* Adjust line height to vertically center text in input */
+}
+
+#login-form button {
+    padding: 5px 10px;
+    background: #333;
+    color: white;
+    border: none;
+    height: 36px; /* Match the height of the input fields */
+    line-height: 1.2; /* Adjust line height to vertically center text in button */
+    cursor: pointer; /* Changes cursor to pointer on hover over button */
+}
+
+#login-form input[type="text"]:focus,
+#login-form input[type="password"]:focus,
+#login-form button:focus {
+    outline: none; /* Removes the default focus outline */
+    border-color: #888; /* Adds a subtle border color change on focus */
+}
+
+/* Remove margins if present */
+#login-form input[type="text"],
+#login-form input[type="password"],
+#login-form button {
+    margin: 0;
+}
+
+/* Responsive styling */
+@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin-right: 0;
+    }
+
+    input[type="text"], button {
+        width: 100%;
+    }
+    nav ul, #login-form-container {
+        float: none;
+        text-align: center;
+    }
+
+    #login-form {
+        flex-direction: column;
+    }
+
+    #login-form input, #login-form button {
+        margin-bottom: 10px;
+        width: 100%; /* Full width on small screens */
+    }
+}
+
+
